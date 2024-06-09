@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../Food Del Frontend Assets/assets/assets";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,7 +16,7 @@ const Header = () => {
           delicious meal at a time.
         </p>
         <button className=" w-32 rounded-lg border-2 border-gray-500 py-2 px-4 text-white bg-transparent hover:bg-gray-500 hover:text-green-300 transition duration-300">
-          View Menu
+          <Link to="/food-menu">View Menu</Link>
         </button>
       </div>
       <div className="md:w-1/2 relative">
